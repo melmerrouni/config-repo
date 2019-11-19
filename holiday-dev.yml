@@ -1,2 +1,11 @@
-info:
-  bar: foo
+spring:
+ rabbitmq:
+   host: localhost
+   username: rabbitmq
+   password: rabbitmq
+  cloud:
+   stream:
+     bindings:
+       collaborator:
+         destination: collaborator
+         group: created
