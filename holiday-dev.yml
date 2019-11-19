@@ -1,11 +1,11 @@
 spring:
- rabbitmq:
-   host: localhost
-   username: rabbitmq
-   password: rabbitmq
+  rabbitmq:
+    host: localhost
+    username: rabbitmq
+    password: rabbitmq
   cloud:
-   stream:
-     bindings:
-       collaborator:
-         destination: collaborator
-         group: created
+    stream:
+      bindings:
+        collaborator:
+          destination: collaborator
+          group: created
