@@ -1,0 +1,8 @@
+zuul:
+  ignored-services: "api-client"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
