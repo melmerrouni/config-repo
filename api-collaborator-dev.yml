@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ${springboot.app.name:api-collaborator}
+  rabbitmq:
+    host: localhost
+    username: rabbitmq
+    password: rabbitmq
+  cloud:
+    stream:
+      bindings:
+        collaborator:
+          content-type: application/json
+          destination: collaborator
